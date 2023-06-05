@@ -1,32 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tom Bartels Profile</title>
     <style>
         body {
+            background: #F0F0F0;
             font-family: Arial, sans-serif;
         }
-        .container {
-            width: 80%;
-            margin: 0 auto;
+        .tinder-bio {
+            width: 350px;
+            background: white;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            overflow: hidden;
         }
-        .profile-image {
-            max-width: 200px;
-            border-radius: 50%;
+        .tinder-bio img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
         }
-        .signature-line {
-            font-size: 1.2em;
-            font-style: italic;
+        .profile-info {
+            padding: 16px;
+        }
+        .profile-info h2 {
+            margin: 0;
+            font-size: 24px;
+            line-height: 1.1;
+        }
+        .profile-info h3 {
+            font-size: 16px;
+            color: grey;
+            margin: 5px 0;
+        }
+        .profile-info p {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 32%;
+            height: 150px;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Tom Bartels</h1>
-        <img src="images/tom.png" alt="Tom Bartels" class="profile-image">
-        <p class="signature-line">"I'm family friends with Tony"</p>
-        <h2>About Me</h2>
-        <p> G'day Guys. I'm Tom Bartels: Diamond Energy's Leading Marketing Manager. I just want you to know that I'm family friends with Tony</p>
+    <div class="tinder-bio">
+        <img src="images/tom.png" alt="Profile Picture">
+        <div class="profile-info">
+            <h2>Tom Bartels, 21</h2>
+            <h3>Marketing Extraordinaire at Diamond Energy</h3>
+            <h3>21.0 km away</h3>
+            <p>G'day Guys. I'm Tom Bartels: Diamond Energy's Leading Marketing Manager. 
+            I just wanted you to know that I'm family friends with Tony.</p>
+        </div>
+        <div class="gallery">
+            <img src="images/image1.png" alt="Gallery Image 1">
+            <img src="images/image2.png" alt="Gallery Image 2">
+            <img src="images/image3.jpg" alt="Gallery Image 3">
+        </div>
     </div>
 </body>
 </html>
