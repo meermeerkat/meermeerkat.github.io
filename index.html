@@ -1,63 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body {
-            background: #F0F0F0;
-            font-family: Arial, sans-serif;
-        }
-        .tinder-bio {
-            width: 350px;
-            background: white;
-            margin: 20px auto;
-            border-radius: 15px;
-            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-            overflow: hidden;
-        }
-        .tinder-bio img {
-            width: 100%;
-            height: 350px;
-            object-fit: cover;
-        }
-        .profile-info {
-            padding: 16px;
-        }
-        .profile-info h2 {
-            margin: 0;
-            font-size: 24px;
-            line-height: 1.1;
-        }
-        .profile-info h3 {
-            font-size: 16px;
-            color: grey;
-            margin: 5px 0;
-        }
-        .profile-info p {
-            font-size: 16px;
-            margin-top: 20px;
-        }
-        .gallery img {
-            width: 32%;
-            height: 150px;
-            object-fit: cover;
-        }
-    </style>
+
 </head>
 <body>
-    <div class="tinder-bio">
-        <img src="images/tom.png" alt="Profile Picture">
-        <div class="profile-info">
-            <h2>Tom Bartels, 21</h2>
-            <h3>Marketing Extraordinaire</h3>
-            <h3>21.0 km away</h3>
-            <p>G'day Guys. I'm Tom Bartels: AGL's Leading Marketing Manager. 
-            I just wanted you to know that I'm family friends with Tony.</p>
-        </div>
-        <div class="gallery">
-            <img src="images/image1.png" alt="Gallery Image 1">
-            <img src="images/image2.png" alt="Gallery Image 2">
-            <img src="images/image3.jpg" alt="Gallery Image 3">
-        </div>
-    </div>
+ <iframe id="JotFormIFrame-231867946319066" title="Jason - Test" onload="window.parent.scrollTo(0,0)" allowtransparency="true" allowfullscreen="true" allow="geolocation; microphone; camera" src="https://form.jotform.com/231867946319066" frameborder="0" style="min-width:100%;max-width:100%;height:539px;border:none;" scrolling="no" > </iframe> <script type="text/javascript"> var ifr = document.getElementById("JotFormIFrame-231867946319066"); if (ifr) { var src = ifr.src; var iframeParams = []; if (window.location.href && window.location.href.indexOf("?") > -1) { iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&')); } if (src && src.indexOf("?") > -1) { iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&")); src = src.substr(0, src.indexOf("?")) } iframeParams.push("isIframeEmbed=1"); ifr.src = src + "?" + iframeParams.join('&'); } window.handleIFrameMessage = function(e) { if (typeof e.data === 'object') { return; } var args = e.data.split(":"); if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); } if (!iframe) { return; } switch (args[0]) { case "scrollIntoView": iframe.scrollIntoView(); break; case "setHeight": iframe.style.height = args[1] + "px"; if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) { iframe.style.minHeight = args[1] + "px"; } break; case "collapseErrorPage": if (iframe.clientHeight > window.innerHeight) { iframe.style.height = window.innerHeight + "px"; } break; case "reloadPage": window.location.reload(); break; case "loadScript": if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; } var src = args[1]; if (args.length > 3) { src = args[1] + ':' + args[2]; } var script = document.createElement('script'); script.src = src; script.type = 'text/javascript'; document.body.appendChild(script); break; case "exitFullscreen": if (window.document.exitFullscreen) window.document.exitFullscreen(); else if (window.document.mozCancelFullScreen) window.document.mozCancelFullScreen(); else if (window.document.mozCancelFullscreen) window.document.mozCancelFullScreen(); else if (window.document.webkitExitFullscreen) window.document.webkitExitFullscreen(); else if (window.document.msExitFullscreen) window.document.msExitFullscreen(); break; } var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false; if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) { var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)}; iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*"); } }; window.isPermitted = function(originUrl, whitelisted_domains) { var url = document.createElement('a'); url.href = originUrl; var hostname = url.hostname; var result = false; if( typeof hostname !== 'undefined' ) { whitelisted_domains.forEach(function(element) { if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) || hostname === element ) { result = true; } }); return result; } }; if (window.addEventListener) { window.addEventListener("message", handleIFrameMessage, false); } else if (window.attachEvent) { window.attachEvent("onmessage", handleIFrameMessage); } </script>
+
 </body>
 </html>
+
+
